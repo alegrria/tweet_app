@@ -13,6 +13,6 @@ class AccesstokenController < ApplicationController
   	prepare_access_token(params[:oauth_token],params[:oauth_verifier])
   	@consumer = OAuth::Consumer.new(params[:oauth_token],params[:oauth_verifier], :site => "https://api.twitter.com")
     @access_token = prepare_access_token(params[:oauth_token],params[:oauth_verifier])
-  	redirect_to "https://api.twitter.com/1.1/statuses/Dende_Nu_timeline.json"
+  	redirect_to "https://twitter.com/Dende_Nu/following"
   end
 end
