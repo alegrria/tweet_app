@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 gem 'oauth', '~> 0.5.1'
+# authorisation for twitter
+gem 'twitter', '~> 6.1.0'
+# use twitter
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.6'
 
